@@ -3,6 +3,7 @@ packages:
   - name: "db" #what is name of go package
     path: "./db/sqlc" #path of the folder where we store generated golang code
     queries: "./db/query/"
+    sql_package: "database/sql"
     schema: "./db/migration/"
     engine: "postgresql" #what db engine we would like to use
     emit_json_tags: true #we want to sqlc add json tags to the generated code
