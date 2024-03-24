@@ -10,3 +10,4 @@ packages:
     emit_prepared_queries: false #generate code that work with prepared statements
     emit_interface: false #generate querier interface (can be usefull if we want to mock database for testing)
     emit_exact_table_names: false # accounts table -> Account struct if this option is set to true then accoutns -> accounts
+    emit_empty_slices: true #when i put pageid to 100 it will return empty slice instead of null
